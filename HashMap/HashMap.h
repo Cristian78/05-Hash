@@ -85,9 +85,9 @@ bool HashMap<K, T>::esVacio() {
 
     for(int i = 0;i < tamanio; i++){
         if(tabla[i]!=NULL)
-            return true;
+            return false;
     }
-    return false;
+    return true;
 }
 
 template<class K, class T>
